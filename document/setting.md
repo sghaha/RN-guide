@@ -1,5 +1,24 @@
 # 1. 개발 환경 구축 (Mac)
 
+## 1.0 homebrew 설치
+
+### 1.0.1 homebrew 설치확인
+터미널에서
+```
+which brew
+```
+결과값 나오면 아래 설치 안해도됨
+
+### 1.0.2
+
+https://brew.sh/
+여기에 나온대로 아래 명령어 수행
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
 ## 1.1. java 11 설치
 왠지는 모르겠지만 11버전을 하라고 한다. 
 
@@ -56,51 +75,19 @@
 > ```
 
 
-## 1.2 expo-cli 설치
+## 1.2 Node & Watchman 설치
+
+https://reactnative.dev/docs/environment-setup
+이걸 따라서 해도된다.   
+
 ```
-npm install -g expo-cli
+brew install node
 ```
-      
 
-* 결과예시
 ```
-sghahaucBookPro:~ sghaha$ npm install -g expo-cli
-npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
-npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
-npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
-npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
-npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
-npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
-npm WARN deprecated fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
-npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm WARN deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm WARN deprecated svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
-npm WARN deprecated subscriptions-transport-ws@0.9.8: The `subscriptions-transport-ws` package is no longer maintained. We recommend you use `graphql-ws` instead. For help migrating Apollo software to `graphql-ws`, see https://www.apollographql.com/docs/apollo-server/data/subscriptions/#switching-from-subscriptions-transport-ws    For general help using `graphql-ws`, see https://github.com/enisdenjo/graphql-ws/blob/master/README.md
-npm WARN deprecated graphql-tools@3.0.0: This package has been deprecated and now it only exports makeExecutableSchema.\nAnd it will no longer receive updates.\nWe recommend you to migrate to scoped packages such as @graphql-tools/schema, @graphql-tools/utils and etc.\nCheck out https://www.graphql-tools.com to learn what package you should use instead
-
-added 1520 packages, and audited 1521 packages in 51s
-
-120 packages are looking for funding
-  run `npm fund` for details
-
-25 vulnerabilities (12 moderate, 13 high)
-
-To address issues that do not require attention, run:
-  npm audit fix
-
-To address all issues (including breaking changes), run:
-  npm audit fix --force
-
-Run `npm audit` for details.
-npm notice 
-npm notice New minor version of npm available! 8.3.1 -> 8.10.0
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v8.10.0
-npm notice Run npm install -g npm@8.10.0 to update!
-npm notice 
+brew install watchman
 ```
+
 
 
 ## 1.3 Xcode
@@ -116,6 +103,26 @@ npm notice
 > 설정 - Loctions에서    
 > Command Line Tools에 Xcode를 지정해준다
 
+
+## 1.4 CocoaPods
+
+### 1.4.1 설치
+
+```
+sudo gem install cocoapods
+```
+
+
+### 1.4.2 for M1 chip
+Mac M1 아키텍처는 Cocoapods와 직접 호환되지 않습니다. 포드를 설치할 때 문제가 발생하면 다음을 실행하여 해결할 수 있습니다.
+```
+sudo arch -x86_64 gem install ffi
+```
+```
+arch -x86_64 pod install
+```
+
+이 명령은 ffi 패키지를 설치하여 동적으로 연결된 라이브러리를 로드하고 포드 설치를 올바르게 실행할 수 있도록 하고 적절한 아키텍처로 포드 설치를 실행합니다.
 
 
 ## 1.4 샘플 RN 생성
@@ -207,4 +214,25 @@ npm run android
 ```
 
 
+## 1.6 ios
+
+### 1.6.1 아이폰용 라이브러리를 cocoapod통해서 설치
+```
+npx pod-install
+```
+
+오류났을때 지우는 방법은 ios디렉토리 들어가서
+```
+pod deintergrate
+```
+
+### 1.6.2 안드로이드 스튜디오에서 실행
+
+```
+npm rum ios
+```
+
+### 1.6.3 Xcode에서 실행
+
+왼쪽위 재생버튼
 
