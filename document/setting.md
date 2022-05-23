@@ -103,8 +103,22 @@ npm notice
 ```
 
 
+## 1.3 Xcode
 
-## 1.3 샘플 RN 생성
+### 1.3.1 Xcode 설치
+> Xcode설치가 안되어있으면 진행하다가 트러블이 나드라    
+> App Store에서 설치하자
+
+### 1.3.2 설정
+> https://stackoverflow.com/questions/58998884/c-compiler-cannot-create-executables-installing-cocoapods
+>
+> 여기서 보이는 것처럼   
+> 설정 - Loctions에서    
+> Command Line Tools에 Xcode를 지정해준다
+
+
+
+## 1.4 샘플 RN 생성
 홈으로 가서
 ```
 cd ~
@@ -121,3 +135,76 @@ cd RN-workspace
 npx react-native init FoodDeliveryApp --template react-native-template-typescript
 ```
 중간에 뭘로 인스톨할거냐고 물어봐서 homebrew로 하라고 했다
+
+
+## 1.5 안드로이드 스튜디오
+
+### 1.5.1 다운로드
+> https://developer.android.com/studio?gclid=Cj0KCQjw-JyUBhCuARIsANUqQ_Ib7XxD35fEIXFQDl9C2_4SFUCIeTGwfkhb32zjp4boSSfnorFUqKkaAgTOEALw_wcB&gclsrc=aw.ds
+>
+> 아마 url이 나중엔 바뀔수도 있을느낌인데
+> 그냥 구글에서 서칭해서 깔자 
+> 나는 맥 인텔칩
+
+
+### 1.5.2 import
+> 프로젝트 open으로 FoodDeliveryApp을 열었다
+
+
+### 1.5.3 SDK
+> 나는 32버전 SDK를 설치했다.
+
+
+### 1.5.4 그래들 설치
+```
+brew install gradle 
+```
+
+
+### 1.5.5 local.properties
+> 참고 : https://eso0609.tistory.com/92
+>
+> 1. React Native 프로젝트에서 android 디렉토리로 접근한다.
+> 2. android 디렉토리에서 local.properties 파일을 생성한다.
+> 3. 아래 코드를 입력한다.
+> sdk.dir = /Users/USERNAME/Library/Android/sdk
+
+
+### 1.5.6 ANDROID_HOME
+
+```
+vi ~/.bash_profile
+```
+
+아래 내용을 추가
+
+```
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```
+
+```
+source ~/.bash_profile
+```
+
+이후에 안드로이드 스튜디오를 껐다켜자
+
+
+### 1.5.7 가상기기 추가
+
+나는 넥서스5로 했다.
+
+
+### 1.5.8 실행
+
+FoodDeliveryApp 디렉토리에서
+
+```
+npm run android
+```
+
+
+
