@@ -47,6 +47,6 @@
 ## 정렬
 
 > - justifyContent : 세로 정렬
-> - alignItems : 가로 정렬
-> 값 : flex-start / center / flex-end
+> - alignItems : 가로 정렬     
+> 값 : flex-start / center / flex-end     
 > 예 : 세로 중앙, 가로 오른쪽 정렬 ) <View style={{justifyContent:'center', alignItems:'flex-end'}}></View>
