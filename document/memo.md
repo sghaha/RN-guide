@@ -20,3 +20,9 @@
 ## flipper 플러그인 추천
 > - flipper-plugin-async-storage : 로컬스토리지 개념
 > - flipper-plugin-redux-debugger : 리덕스 액션하는걸 보여줌
+
+
+## 앱 이름 변경
+> - /android/app/src/main/res/values/string.xml
+> - app.json의 displyName
+> - /ios/FoodDeliveryApp/Info.plist의 CFBundleDisplayName
