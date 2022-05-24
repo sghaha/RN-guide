@@ -42,3 +42,11 @@
 > - src/slices: 리덕스 슬라이스
 > - types: 타입 정의 (src 디렉토리 )
 
+
+
+## 정렬
+
+> - justifyContent : 세로 정렬
+> - alignItems : 가로 정렬
+> 값 : flex-start / center / flex-end
+> 예 : 세로 중앙, 가로 오른쪽 정렬 ) <View style={{justifyContent:'center', alignItems:'flex-end'}}></View>
