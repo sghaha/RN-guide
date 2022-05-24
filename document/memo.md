@@ -50,3 +50,11 @@
 > - alignItems : 가로 정렬     
 > 값 : flex-start / center / flex-end     
 > 예 : 세로 중앙, 가로 오른쪽 정렬 ) <View style={{justifyContent:'center', alignItems:'flex-end'}}></View>
+
+## 버튼 종류
+> - Pressable
+> - Button
+> - TouchableNativeFeedback
+> - TouchableWithoutFeedback
+> - TouchableHighlight
+> - TouchableOpacity
