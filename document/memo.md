@@ -1,6 +1,6 @@
 # 메모
 
-## display Name이 말고 그냥 프로젝트 이름을 바꾸고 싶을때
+## display Name 말고 그냥 프로젝트 이름을 바꾸고 싶을때
 > react-native-rename을 보고 어디를 바꿔야 하는지 하나씩 찾아내서 찾아야한다.    
 > 그냥 프로젝트를 새로 만드는게 맘편할 수도 있다.   
 > 
@@ -22,7 +22,7 @@
 > - flipper-plugin-redux-debugger : 리덕스 액션하는걸 보여줌
 
 
-## 앱 이름 변경
+## 앱 이름 변경(display Name)
 > - /android/app/src/main/res/values/string.xml
 > - app.json의 displyName
 > - /ios/FoodDeliveryApp/Info.plist의 CFBundleDisplayName
