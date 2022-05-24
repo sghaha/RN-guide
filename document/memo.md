@@ -26,3 +26,19 @@
 > - /android/app/src/main/res/values/string.xml
 > - app.json의 displyName
 > - /ios/FoodDeliveryApp/Info.plist의 CFBundleDisplayName
+
+
+## 디렉토리 구조
+> 여러가지 방법이 있겠지만 내가 들은 강의에서는 이렇게 한다고 한다. 
+> - src 디렉토리를 생성하자
+> - src/assets: 이미지, 폰트 등
+> - src/constants: 상수
+> - src/pages: 페이지 단위 컴포넌트
+> - src/components: 기타 컴포넌트
+> - src/contexts: context api 모음
+> - src/hooks: 커스텀 훅 모음
+> - src/modules: 네이티브 모듈
+> - src/store: 리덕스 스토어 세팅
+> - src/slices: 리덕스 슬라이스
+> - types: 타입 정의
+
