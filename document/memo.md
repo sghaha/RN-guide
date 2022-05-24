@@ -52,11 +52,11 @@
 > 예 : 세로 중앙, 가로 오른쪽 정렬 ) <View style={{justifyContent:'center', alignItems:'flex-end'}}></View>
 
 ## 버튼 종류
-> 버튼 종류는 아래와 같다. 조금씩 다르니 상황에 맞게 쓰면 될듯
+> 버튼 종류는 아래와 같다. 조금씩 다르니 상황에 맞게 쓰면 될듯   
+> 주의) 클릭이벤트 거는것이 onClick이 아니라 onPress니까 혼동하지말자
 > - Pressable
 > - Button
 > - TouchableNativeFeedback
 > - TouchableWithoutFeedback
 > - TouchableHighlight
-> - TouchableOpacity    
-> 클릭이벤트 거는것이 onClick이 아니라 onPress니까 혼동하지말자
+> - TouchableOpacity   
