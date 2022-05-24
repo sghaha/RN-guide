@@ -4,5 +4,7 @@
 
 ### 2. [아이폰에서 RN 돌려보기(Mac)](https://github.com/sghaha/RN-guide/blob/main/document/iphoneRunning.md)
 
-### 3. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
+### 3. [reactNavigation](https://github.com/sghaha/RN-guide/blob/main/document/reactNavigation.md)
+
+### 4. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
 
