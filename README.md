@@ -4,9 +4,11 @@
 
 ### 2. [아이폰에서 RN 돌려보기(Mac)](https://github.com/sghaha/RN-guide/blob/main/document/iphoneRunning.md)
 
-### 3. [생성된 프로젝트 살펴보기](https://github.com/sghaha/RN-guide/blob/main/document/create.md)
+### 3. [VSCode 세팅](https://github.com/sghaha/RN-guide/blob/main/document/vscode.md)
 
-### 4. [reactNavigation](https://github.com/sghaha/RN-guide/blob/main/document/reactNavigation.md)
+### 4. [생성된 프로젝트 살펴보기](https://github.com/sghaha/RN-guide/blob/main/document/create.md)
 
-### 5. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
+### 5. [reactNavigation](https://github.com/sghaha/RN-guide/blob/main/document/reactNavigation.md)
+
+### 6. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
 
