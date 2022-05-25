@@ -40,7 +40,7 @@
 > - src/modules: 네이티브 모듈
 > - src/store: 리덕스 스토어 세팅
 > - src/slices: 리덕스 슬라이스
-> - types: 타입 정의 (src 디렉토리 )
+> - types: 타입 정의 (src 디렉토리랑 같은 레벨)
 
 
 
