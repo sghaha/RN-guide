@@ -8,7 +8,7 @@
 
 
 ## App 컴포넌트
-> - App.tsx
+> - App.tsx    
 > (원래는 App.js인데 나는 RN 프로젝트 생성할때 타입스크립트를 사용한다고 옵션을 넣어서 App.tsx가 된다. )    
 > SafeAreaView, ScrollView, View, Text, StatusBar등이 import되어있는데 화면관련이다.   
 > 맨 마지막 export default App; 부분에서 코드들을 export한다. 그래서 index.js에서 App을 가져다 쓸수 있는것임
