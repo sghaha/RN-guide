@@ -6,9 +6,11 @@
 
 ### 3. [VSCode 세팅](https://github.com/sghaha/RN-guide/blob/main/document/vscode.md)
 
-### 4. [생성된 프로젝트 살펴보기](https://github.com/sghaha/RN-guide/blob/main/document/create.md)
+### 4. [Flipper 세팅](https://github.com/sghaha/RN-guide/blob/main/document/flipper.md)
 
-### 5. [reactNavigation](https://github.com/sghaha/RN-guide/blob/main/document/reactNavigation.md)
+### 5. [생성된 프로젝트 살펴보기](https://github.com/sghaha/RN-guide/blob/main/document/create.md)
 
-### 6. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
+### 6. [reactNavigation](https://github.com/sghaha/RN-guide/blob/main/document/reactNavigation.md)
+
+### 7. [메모](https://github.com/sghaha/RN-guide/blob/main/document/memo.md)
 
